@@ -1,5 +1,5 @@
 import { useState } from "react";
-import DeleteIcon from "./assets/icon/deleteIcon.svg";
+import DeleteIcon from "../assets/icon/deleteIcon.svg";
 
 function Calculator() {
 

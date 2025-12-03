@@ -2,15 +2,17 @@ import Navbar from "./navbar.jsx";
 import "./navbar.css";
 import Footer from "./footer.jsx";
 import "./Footer.css";
-import Calculator from "./Calculator";
-import "./Calculator.css";
-import InAndEx from "./InAndEx.jsx";
+import Calculator from "./Calculator/Calculator.jsx";
+import "./Calculator/Calculator.css";
+import InAndEx from "./IncomeExpenses/InAndEx.jsx";
+import AddItem from "./IncomeExpenses/AddItem.jsx";
+
 
 import { Routes, Route } from "react-router-dom";
 
 function HomePage() {
   return (
-    <div style={{ padding: "40px", textAlign: "center", color: "#fff", fontSize: "24px", fontWeight: "bold"  }}>
+    <div style={{ padding: "40px", textAlign: "center", color: "#000000ff", fontSize: "24px", fontWeight: "bold"  }}>
       <h1>Home Page</h1>
       <p>Example React Test</p>
     </div>
@@ -33,9 +35,6 @@ function CalculatorPage() {
 function InAndExPage() {
   return (
     <>
-      <div style={{ textAlign: "center", padding: "20px", background: "#222", color: "#fff", fontSize: "24px", fontWeight: "bold" }}>
-        Income and Expenses
-      </div>
       <div style={{ minHeight: "100vh" }}>
         <InAndEx />
       </div>
@@ -45,7 +44,7 @@ function InAndExPage() {
 
 function App() {
   return (
-    <div style={{ background: "#121212", minHeight: "100vh" }}>
+    <div style={{ minHeight: "100vh" }}>
       <div>
         <Navbar />
       </div>
@@ -53,6 +52,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/calculator" element={<CalculatorPage />} />
         <Route path="/inandex" element={<InAndExPage />} />
+        <Route path="/add-item" element={<AddItem />} />
       </Routes>
       <div>
         <Footer />
