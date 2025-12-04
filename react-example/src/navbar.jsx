@@ -28,7 +28,6 @@ function Navbar({ isAdminAuthenticated, user, onLogout }) {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          {/* เมนูฝั่งซ้าย */}
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="/">

@@ -7,7 +7,6 @@ import "./Calculator/Calculator.css";
 import InAndEx from "./IncomeExpenses/InAndEx.jsx";
 import AddItem from "./IncomeExpenses/AddItem.jsx";
 
-
 import { Routes, Route } from "react-router-dom";
 
 function HomePage() {

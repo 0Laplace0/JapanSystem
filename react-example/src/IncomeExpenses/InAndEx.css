@@ -1,6 +1,9 @@
 .thead-brown th, .btn-brown a {
+  padding: 16px 12px;
+  font-size: 16px;
   background-color: #8D6E63 !important;
   color: #fff !important;
+  
 }
 
 .btn-brown{
